@@ -1,0 +1,632 @@
+---
+title: "Tutoral 3"
+author: "Ivan Bizberg"
+date: "1/18/2021"
+height: 1500
+width: 1921
+output:
+  revealjs::revealjs_presentation:
+    theme: solarized
+    highlight: default
+    transition: slide
+    background-transition: slide
+    self_contained: false
+    css: slides_css.css
+    fig_width: 7
+    fig_height: 6
+    fig_caption: true
+    reveal_plugins: ["notes"]
+    defaultTiming: 5
+bibliography: C:/Users/ivan/Dropbox/ZoteroMyLibrary.bib
+link-citations: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(officedown)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+---
+<div><img src="C:/Users/ivan/Dropbox/PHD/logoUNAM.png" align="right" style="float" height="200" width="200"></div>
+<span style="font-size:60pt">Efectos de la competencia entre hermanos y del fratricidio en la adecuación de las partes involucradas</span>  
+
+<br/><br/><br/><br/>
+<div><img src="C:/Users/ivan/Dropbox/PHD/Imagen1.jpg" align="right"></div>
+<div><img src="C:/Users/ivan/Dropbox/PHD/Imagen2.jpg" align="left"></div>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+**Titulo provisional**: Causas y consecuencias del optimismo parental en el bobo de patas azules.\
+
+# Parental optimism
+
+Parents produce more offspring than they can or are willing to rear  
+<br/>
+
+**Costly behavior**
+
+* For chicks
+* For parents  
+<br/>
+
+**Different types of brood reduction**  
+
+<div class="fragment fade-right">
+* Obligated
+* <span style="color:#0C7289;">Facultative</span>
+* Passive
+* <span style="color:#0C7289;">Agressive</span>  
+</div>
+<br/>
+
+
+
+# Chapters
+|
+|
+|
+> 1. Functionality of optimistic clutches
+>     * Ressource tracking 
+>     * Insurance
+>     * Sibling facilitation
+<br/><br/><br/>
+> 2. Cost of sibling rivalry in offsprings
+>     * In offsprings fitness in the short and long term 
+>     * In parents next year reproduction and survival
+
+
+# Chapter I: Functionality of optimistics clutches
+<span style="font-size:40pt; float:left;">Hypothesis</span>  
+
+|
+|
+> * <span style="color:#0C7289;">**Resource tracking hypothesis**</span>
+> * <span style="color:#0C7289;">**Insurance hypothesis**</span>
+> * <span style="color:#0C7289;">**Sibling facilitation**</span>
+> * <span style="color:#8f1f09;">**Ice box hypothesis**</span> 
+> * <span style="color:#8f1f09;">**Adoption hypothesis**</span> 
+
+<span style="font-size:40pt; float:left;">What we know so far</span>  
+<br/>
+Females in good nutritional condition lay larger clutches. Years when SST is high &rArr; <span style="color:#c40d00;">&#8600;</span> clutch size and <span style="color:#0C7289;">&#8599;</span> brood reduction  
+<br/>
+
+<span style="font-size:40pt; float:left;">Predictions</span>  
+<br/>
+<span style="float:left;">Based on:</span>  
+
+> 1. **Resource tracking hyp**: Low food availability **near** the laying date &rArr; clutch size <span style="color:#c40d00;">&#8600;</span>  
+food availability <span style="color:#c40d00;">&#8600;</span> &rArr; brood reduction probability <span style="color:#0C7289;">&#8599;</span>  
+<br/>
+> 2. **Insurance hyp**:
+>     + marginal chicks' survival <span style="color:#0C7289;">&#8599;</span> after the death of core offspring
+>     + core chicks' survival <span style="color:#00c48c;">$\approx$</span> after the death of marginal offspring  
+<br/>
+> 3. **Facilitation hyp**: core offspring raised with their sibling\
+should perform better in life than chicks raised alone.
+
+<!-- <span style="font-size:40pt; float:left;">Analyses</span>   -->
+<!-- <br/> -->
+
+<!-- > 1. Using climwin quantify how environmental conditions and nest depredation influence females' clutch size   -->
+<!-- <br/> -->
+
+<!-- > 2. Using climwin quantify, in no depredated broods of two, how chl-a, SST and rain amount affected offspring survival over their first 60 days of life.  -->
+
+<!-- >   + Evaluate with climwin if chlorophyll-a concentration and SST are adequate proxy of food availability   -->
+<!-- <br/> -->
+
+<!-- > 3. Using clutches of two where both chicks hatched, we tested how the death of one chick affected the survival of their sibling.   -->
+<!-- <br/> -->
+
+<!-- > 4. In clutches of two, we tested if the presence of a marginal offspring during development had a positive effect on core fledglings fitness by, comparing chicks that shared the nest with their sibling for at least one day and chicks that lost through depredation their siblings as an egg. -->
+
+<!-- >   + body mass -->
+<!--     + average timing of egg laying over their first 6 years of life -->
+<!--     + number of eggs, fledglings and recruits produced during their first 6 years of life -->
+
+## Study species 
+<div><img src="C:/Users/ivan/Dropbox/PHD/Imagen3.jpg" align="right" style="float"></div>
+
+<div>
+  <span style="color:#0C7289; float:left;">Blue-footed boobies (*Sula nebouxii*)</span>
+<br/><br/>
+</div>
+
+<div style="text-align:left">
+> * **Philopatric seabird with high site fidelity**
+  > * Foraging area: 30km^2^
+  > * Breeding seasson: February to July
+  <br/><br/>
+  <br/><br/>
+  > * **Clutch size: 1 - 3 (similar egg size/hormones but different york mass** _[1]_**)**
+  > * **Hatching asyncrony (4 days)**
+  > * **Senior chicks grow faster & have higher probability of surviving** _[2]_
+  > * Sexual size dimorphism
+  <br/><br/>
+  <br/><br/>
+  > * **Both parents contribute in the incubation ($\approx$ 41 days),\
+  defense and foraging tasks ($\approx$ 70 days)**
+  <br/>
+  >   + Nestlings are provisioned with small __pelagic__ fishes:\
+  8 times per day
+  >     + anchovies
+  >     + sardines 
+  >     + herrings
+</div>
+
+<div class="slide-footer2" style="margin-top;font-size:80%;bottom:100">
+  <a href="#/refs"> 
+    ^1^[@drummond_mothers_2008]
+    ^2^[@drummond_parent-offspring_1986-1]
+  </a>
+</div>
+
+## Environemental and climatic data 
+<br/><br/><br/>
+<div><img src="C:/Users/ivan/Dropbox/PHD/Capture_isla.png" align="right" style="float" height="500" width="600"></div>
+<br/>
+<div style="text-align:left">
+* Sea surface temperature (°C):\
+influence distribution of pelagic fishes 
+<br/><br/><br/>
+* Chlorophyll-a concentration (mg/l):\
+Chl-a is positively correlated with fish availability
+<br/><br/><br/>
+* Rain amount (mm):\
+Can influence foraging task, thermoregulation and chicks survival 
+</div>
+
+# How and when environmental conditions influence clutch size  
+
+**Objective**: Evaluate the predictive ability of the blue footed boobie (hyp I)
+
+**Sample**: Renesting attemps and manipulated nests were remove form the sample  
+<br/><br/>
+
+> 1. Climwin analysis: 
+Identify critical time windows were sea surface temperature (SST), rainfall amount and chlorophyll-a concentration (chl-a) explains most of the clutch size variation.  
+<br/>
+> 2. Test prediction:\
+Chl-a & SST **close** to the laying date have respectively a positive and a negative effect on clutch size.\
+
+## Results
+<br/><br/>
+
+* Weekly average chlorophyll-a concentration 1 week prior to clutch completion <span style="color:#c40062;">&rArr;</span> linear positive effect  
+<br/>
+* Weekly maximum SST 11 and 1 week prior <span style="color:#c40062;">&rArr;</span> linear negative effect  
+     * The effects of chlorophyll concentration and SST get stronger as the laying date approaches  
+<br/>
+* Late breeders tend to lay less eggs  
+<br/>
+* Females age <span style="color:#c40062;">&rArr;</span> quadratic positive effect.  
+<br/>
+* Rain amount, last year depredation rate and couple experience <span style="color:#c40062;">&rArr;</span> no significant effect on clutch size
+
+## Results table
+
+__Table 1__: Analysis of the climatic, environmental and depredation effect on clutch size.
+```{r, echo=FALSE, out.width='49%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_ClutchSize/ClimClutchSize_Fixresults.png")
+```
+\
+```{r, echo=FALSE, out.width='24%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_ClutchSize/ClimClutchSize_Ranresults.png")
+```
+
+# Ressource tracking hypothesis
+
+**Objective**: Evaluate the effect of the food availability in the probability of brood reduction 
+
+**Sample**: No depredated broods of two, renesting attemps and manipulated nests were remove
+<br/><br/>
+
+> 1. Climwin analysis: 
+Identify critical time windows were sea surface temperature (SST), rainfall amount and chlorophyll-a concentration (chl-a) explains most of the brood reduction variation.  
+<br/>
+> 2. Test prediction: Low chl-a concentration and high SST increases the risk of brood reduction 
+
+## Results
+
+```{r, echo=FALSE, include=FALSE}
+# Final Results from Ressource tracking hypothesis
+RTH_Clim <- read.csv("C:/Users/ivan/Dropbox/PHD/Git/Climwin_BroodReduction/FinalResults.csv", row.names = 1) %>% round(digits = 2)
+RTH_Clim
+```
+```{r Final Results for ClimBroodReduc, echo=FALSE, include=FALSE}
+Chl_beta <- RTH_Clim["RefittedChl","beta"]
+Chl_se   <- RTH_Clim["RefittedChl","se"]
+Chl_IC2  <- RTH_Clim["RefittedChl","X2.5.."]
+Chl_IC97 <- RTH_Clim["RefittedChl","X97.5.."]
+
+Chl_2_beta <- RTH_Clim["I(RefittedChl^2)","beta"]
+Chl_2_se   <- RTH_Clim["I(RefittedChl^2)","se"]
+Chl_2_IC2  <- RTH_Clim["I(RefittedChl^2)","X2.5.."]
+Chl_2_IC97 <- RTH_Clim["I(RefittedChl^2)","X97.5.."]
+
+SST_beta <- RTH_Clim["RefittedSST","beta"]
+SST_se   <- RTH_Clim["RefittedSST","se"]
+SST_IC2  <- RTH_Clim["RefittedSST","X2.5.."]
+SST_IC97 <- RTH_Clim["RefittedSST","X97.5.."]
+
+SST_2_beta <- RTH_Clim["I(RefittedSST^2)","beta"]
+SST_2_se   <- RTH_Clim["I(RefittedSST^2)","se"]
+SST_2_IC2  <- RTH_Clim["I(RefittedSST^2)","X2.5.."]
+SST_2_IC97 <- RTH_Clim["I(RefittedSST^2)","X97.5.."]
+
+AreaRain_beta <- RTH_Clim["RefittedArea_Rain","beta"]
+AreaRain_se   <- RTH_Clim["RefittedArea_Rain","se"]
+AreaRain_IC2  <- RTH_Clim["RefittedArea_Rain","X2.5.."]
+AreaRain_IC97 <- RTH_Clim["RefittedArea_Rain","X97.5.."]
+
+AreaRain_2_beta <- RTH_Clim["I(RefittedArea_Rain^2)","beta"]
+AreaRain_2_se   <- RTH_Clim["I(RefittedArea_Rain^2)","se"]
+AreaRain_2_IC2  <- RTH_Clim["I(RefittedArea_Rain^2)","X2.5.."]
+AreaRain_2_IC97 <- RTH_Clim["I(RefittedArea_Rain^2)","X97.5.."]
+
+PROPRANK_beta <- RTH_Clim["PROPORTIONALRANK","beta"]
+PROPRANK_se   <- RTH_Clim["PROPORTIONALRANK","se"]
+PROPRANK_IC2  <- RTH_Clim["PROPORTIONALRANK","X2.5.."]
+PROPRANK_IC97 <- RTH_Clim["PROPORTIONALRANK","X97.5.."]
+
+HatchAsyc_beta <- RTH_Clim["HatchAsync","beta"]
+HatchAsyc_se   <- RTH_Clim["HatchAsync","se"]
+HatchAsyc_IC2  <- RTH_Clim["HatchAsync","X2.5.."]
+HatchAsyc_IC97 <- RTH_Clim["HatchAsync","X97.5.."]
+
+```         
+
+
+* Weekly minimum chlorophyll-a concentration 10.5 and 2 weeks prior to brood outcome <span style="color:#c40062;">&rArr;</span> quadratic negative effect\
+(chl: &beta; &pm; SE = `r Chl_beta` &pm; `r Chl_se`, 95% CI: `r Chl_IC2` to `r Chl_IC97`; chl^2^: &beta; &pm; SE = `r Chl_2_beta` &pm; `r Chl_2_se`, 95% CI: `r Chl_2_IC2` to `r Chl_2_IC97`)
+```{r, echo=FALSE, out.width='100%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_BroodReduction/Climwin_BroodReduction_files/figure-html/Plot Chl-1.png")
+```
+
+__fig1__: Hazard ratio (HR) for brood reduction likelihood (based on estimates derived from Cox PH model) relative to the chlorophyll-a concentration in a given week; dotted line indicates HR = 1, meaning there is no effect (HR > 1 indicates positive effect, HR < 1 indicates negative effect).
+
+
+* Weekly maximum SST 7.5 weeks prior <span style="color:#c40062;">&rArr;</span> quadratic positive effect\
+(SST: &beta; &pm; SE = `r SST_beta` &pm; `r SST_se`, 95% CI: `r SST_IC2` to `r SST_IC97` SST^2^ &beta; &pm; SE = `r SST_2_beta` &pm; `r SST_2_se`, 95% CI: `r SST_2_IC2` to `r SST_2_IC97`)
+```{r, echo=FALSE, out.width='100%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_BroodReduction/Climwin_BroodReduction_files/figure-html/Plot SST-1.png")
+```
+__Fig2__: Hazard ratio (HR) for brood reduction likelihood (based on estimates derived from Cox PH model) relative to the SST in a given week.
+
+* Weekly maximum rain amount 14 and 4 weeks prior <span style="color:#c40062;">&rArr;</span> quadratic positive effect\
+(Rain: &beta; &pm; SE = `r AreaRain_beta` &pm; `r AreaRain_se`, 95% CI: `r AreaRain_IC2` to `r AreaRain_IC97`; Rain^2^ &beta; &pm; SE = `r AreaRain_2_beta` &pm; `r AreaRain_2_se`, 95% CI: `r AreaRain_2_IC2` to `r AreaRain_2_IC97`)
+
+* Nest established later in the season had a higher probability of suffering brood reduction\
+(&beta; &pm; SE = `r PROPRANK_beta` &pm; `r PROPRANK_se`, 95% CI: `r PROPRANK_IC2` to `r PROPRANK_IC97`)
+
+* Hatching asynchrony, couple experience, female and male age were not related to clutch size
+
+
+
+## Chlorophyll-a/SST and food availability
+
+
+**Sample**: Renesting attemps and manipulated nests were remove form the sample 
+<br/><br/>
+In order to evaluate if chlorophyll-a concentration and SST are an adequate proxies of food availability: Tested in chicks A and B separately the effect of chl-a and SST on offspring body mass at 70 days old.  
+<br/><br/><br/>
+
+### Results 
+
+* Weekly minimum chlorophyll concentration (13 to 0.5 weeks prior to chick measurement for chick A and 10 to 1 weeks for chick B) with chlorophyll having the strongest effect during the first weeks of the chick's life and progressively diminishing as the chicks grow
+<br/>
+* Chick A mass was best correlated with the weekly maximum SST 11 to 1 week prior to measurement with the latest weeks having the strongest negative influence (see supp material fig S1b). Meanwhile chick B mass was best correlated with average SST 14 weeks prior to measurement.
+<br/>
+* Rainfall <span style="color:#c40062;">&rArr;</span> quadratic negative effect.
+<br/>
+* Laying date <span style="color:#c40062;">&rArr;</span> linear negative effect
+<br/>
+* Cohabitation time was only costly to chick B mass and parents 
+<br/>
+* Couple experience only had a positive effect on chick A mass  
+<br/>
+* Parent's age <span style="color:#c40062;">&rArr;</span> no sign effect
+
+
+## Results table
+
+__Table 2__: Analyses of the climatic and environmental effect on chicks body mass.
+```{r, echo=FALSE, out.width='49%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_MassA/FixMass_results.png")
+```
+```{r, echo=FALSE, out.width='24%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_MassA/RandMass_results.png")
+```
+
+```{r, echo=FALSE, out.width='49%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_MassB/FixMass_results.png")
+```
+```{r, echo=FALSE, out.width='24%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Climwin_MassB/RandMass_results.png")
+```
+
+
+# Insurance hypothesis
+**Sample**: Clutches of two where both chicks hatched, renesting attemps and manipulated nests were remove. 
+<br/><br/>
+Test for core and marginal offspring, separately how the death of one chick affected the survival of their sibling.
+
+> 1. Test prediction:\
+marginal chicks' survival <span style="color:#0C7289;">&#8599;</span> after the death of core offspring\
+core chicks' survival <span style="color:#00c48c;">$\approx$</span> after the death of marginal offspring  
+
+## Results
+
+Prediction:\
+marginal chicks' survival <span style="color:#0C7289;">&#8599;</span> after the death of core offspring\
+core chicks' survival <span style="color:#00c48c;">$\approx$</span> after the death of marginal offspring  
+
+```{r Results A from insurance hypothesis, include=FALSE, echo=FALSE}
+CoefInsA <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_Insurance/CoefInsA", row.names = 2) %>% round(digits = 2)
+
+ASibDeath_beta <- CoefInsA["Sib_died1","Estimate"]
+ASibDeath_se   <- CoefInsA["Sib_died1","Std..Error"]
+ASibDeath_IC2  <- CoefInsA["Sib_died1","X2.5.."]
+ASibDeath_IC97 <- CoefInsA["Sib_died1","X97.5.."]
+
+APropRank_beta <- CoefInsA["PROPORTIONALRANK","Estimate"]
+APropRank_se   <- CoefInsA["PROPORTIONALRANK","Std..Error"]
+APropRank_IC2  <- CoefInsA["PROPORTIONALRANK","X2.5.."]
+APropRank_IC97 <- CoefInsA["PROPORTIONALRANK","X97.5.."]
+
+AHatchAsy_beta <- CoefInsA["EstHatchAsynchro12_","Estimate"]
+AHatchAsy_se   <- CoefInsA["EstHatchAsynchro12_","Std..Error"]
+AHatchAsy_IC2  <- CoefInsA["EstHatchAsynchro12_","X2.5.."]
+AHatchAsy_IC97 <- CoefInsA["EstHatchAsynchro12_","X97.5.."]
+
+AFemAge_beta   <- CoefInsA["RealMotherAge","Estimate"]
+AFemAge_se     <- CoefInsA["RealMotherAge","Std..Error"]
+AFemAge_IC2    <- CoefInsA["RealMotherAge","X2.5.."]
+AFemAge_IC97   <- CoefInsA["RealMotherAge","X97.5.."]
+
+AFemAge2_beta  <- CoefInsA["I(RealMotherAge^2)","Estimate"]
+AFemAge2_se    <- CoefInsA["I(RealMotherAge^2)","Std..Error"]
+AFemAge2_IC2   <- CoefInsA["I(RealMotherAge^2)","X2.5.."]
+AFemAge2_IC97  <- CoefInsA["I(RealMotherAge^2)","X97.5.."]
+```
+
+
+```{r Results B from insurance hypothesis, include=FALSE, echo=FALSE}
+CoefInsB <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_Insurance/CoefInsB", row.names = 2) %>% round(digits = 2)
+
+BSibDeath_beta <- CoefInsB["Sib_died1","Estimate"]
+BSibDeath_se   <- CoefInsB["Sib_died1","Std..Error"]
+BSibDeath_IC2  <- CoefInsB["Sib_died1","X2.5.."]
+BSibDeath_IC97 <- CoefInsB["Sib_died1","X97.5.."]
+
+BPropRank_beta <- CoefInsB["PROPORTIONALRANK","Estimate"]
+BPropRank_se   <- CoefInsB["PROPORTIONALRANK","Std..Error"]
+BPropRank_IC2  <- CoefInsB["PROPORTIONALRANK","X2.5.."]
+BPropRank_IC97 <- CoefInsB["PROPORTIONALRANK","X97.5.."]
+
+BHatchAsy_beta <- CoefInsB["EstHatchAsynchro12_","Estimate"]
+BHatchAsy_se   <- CoefInsB["EstHatchAsynchro12_","Std..Error"]
+BHatchAsy_IC2  <- CoefInsB["EstHatchAsynchro12_","X2.5.."]
+BHatchAsy_IC97 <- CoefInsB["EstHatchAsynchro12_","X97.5.."]
+
+BFemAge_beta   <- CoefInsB["RealMotherAge","Estimate"]
+BFemAge_se     <- CoefInsB["RealMotherAge","Std..Error"]
+BFemAge_IC2    <- CoefInsB["RealMotherAge","X2.5.."]
+BFemAge_IC97   <- CoefInsB["RealMotherAge","X97.5.."]
+
+BFemAge2_beta  <- CoefInsB["I(RealMotherAge^2)","Estimate"]
+BFemAge2_se    <- CoefInsB["I(RealMotherAge^2)","Std..Error"]
+BFemAge2_IC2   <- CoefInsB["I(RealMotherAge^2)","X2.5.."]
+BFemAge2_IC97  <- CoefInsB["I(RealMotherAge^2)","X97.5.."]
+```
+<br/><br/>
+
+* The death of core offspring increased the death probability of the marginal offspring when core chick died\
+(&beta; &pm; SE = `r BSibDeath_beta` &pm; `r BSibDeath_se`, 95% CI: `r BSibDeath_IC2` to `r BSibDeath_IC97`). 
+
+* The death of marginal chick didn't affect chick A survival.
+
+* In both offspring hatching later in the season was detrimental to their survival\
+(Chick B: &beta; &pm; SE = `r BPropRank_beta` &pm; `r BPropRank_se`, 95% CI: `r BPropRank_IC2` to `r BPropRank_IC97`; Chick A: &beta; &pm; SE = `r APropRank_beta` &pm; `r APropRank_se`, 95% CI: `r APropRank_IC2` to `r APropRank_IC97`). 
+
+* Greater hatching asynchrony only increased death probability in marginal offspring\
+(Chick B: &beta; &pm; SE = `r BHatchAsy_beta` &pm; `r BHatchAsy_se`, 95% CI: `r BHatchAsy_IC2` to `r BHatchAsy_IC97`)
+* Female age only had a negative non linear effect on core offspring death probability\
+(age: &beta; &pm; SE = `r AFemAge_beta` &pm; `r AFemAge_se`, 95% CI: `r AFemAge_IC2` to `r AFemAge_IC97`; age^2^: &beta; &pm; SE = `r AFemAge2_beta` &pm; `r AFemAge2_se`, 95% CI: `r AFemAge2_IC2` to `r AFemAge2_IC97`).
+
+
+
+# Sibling facilitation
+**Sample**: Renesting attemps and manipulated nests were remove.\
+Chicks that shared the nest with their sibling for at least one day and chicks that lost through depredation their siblings.
+
+> 1. **Test prediction**: core offspring raised with their sibling should perform better in life than chicks raised alone.
+
+## Results
+
+```{r Results from facilitation hypothesis, include=FALSE, echo=FALSE}
+Fac_Coef_mass <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_facilitation/Mass_Results.csv", row.names = 1) %>%
+  round(digits = 2)
+Fac_Coef_layi <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_facilitation/Laying_Results.csv", row.names = 1) %>% 
+  round(digits = 2)
+Fac_Coef_eggs <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_facilitation/Eggs_Results.csv", row.names = 1) %>% 
+  round(digits = 2)
+Fac_Coef_fled <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_facilitation/Fledglings_Results.csv", row.names = 1) %>% 
+  round(digits = 2)
+Fac_Coef_recr <- read.csv("C:/Users/Ivan/Dropbox/PHD/Git/Sibling_facilitation/Recruits_Results.csv", row.names = 1) %>% 
+  round(digits = 2)
+```
+<br/><br/><br/>
+
+* Sibling presence during development didn't affect fledglings mass nor the tested reproductive parameters (i.e. the average timing of egg laying and the number of eggs, fledglings and recruits produced during their first 6 years of life)  
+<br/>
+* Chl-a, ulna size , positively related to body mass  
+<br/>
+* SST, hatching date negatively related to body mass  
+<br/>
+* Chicks that hatched earlier in the season tend on average to breed earlier than chicks born later in the season  
+<br/>
+* Females have more eggs, fledglings and recruits during their first 6 years of life  
+
+
+# The contribution of the marginal offspring to parental fitness
+<br/>
+
+* Extra reproductive value: probability that both chicks survived^1^
+* Insurance reproductive value: probability that a marginal chicks survive after the death of the senior chick
+
+<div class="slide-footer" style="margin-top;font-size:80%;">
+  <a href="#/refs"> 
+    ^1^[@mock_advantages_1986]
+  </a>
+</div>
+<br/><br/>
+__Table 3__: Extra and insurance reproductive value of marginal chick.\
+```{r, echo=FALSE, out.width='45%'}
+include_graphics("C:/Users/ivan/Dropbox/PHD/Git/Calculate_RepValue/Reproductive_Value_results.png")
+```
+
+# Chapter II and III  
+<br/>
+<div>
+  <img src="C:/Users/ivan/Dropbox/PHD/Tutorales/Imagenes/ChicksMother.jpg">
+</div>
+
+***
+### II: Cost of sibling rivalry in offsprings
+### III: Cost of sibling rivalry in parents fitness 
+<br/>
+**Objective:**\
+Estimate the costs of sibling rivalry in offspring and parents by comparing families of 2 chicks where brood reduction occurred and analyzing how the time before brood reduction influence the offspring's and parents' fitness.  
+<br/>
+
+### Offsprings
+<p class="fragment fade-right">
+**Hyp**: Core chick defends their optimal condition and reduce the brood when their fitness is in danger\
+**Pred**: Cohabitation time doesn't have any effect on core chick fitness in the short or long term\
+</p>
+
+<p class="fragment fade-right">
+ <span style="color:#a6acad;">
+**Hyp**: Because of the inclusive fitness, core chick would sacrifice x amount of their own condition 
+ </span>
+</p>
+
+<p class="fragment fade-right">
+**Hyp**: Core offspring doesn't have a complete control over their sibling survival\
+**Pred**: Cohabitation time has a negative effect on core offspring survival
+</p>
+<br/>
+
+### Parents
+
+<p class="fragment fade-right">
+**Hyp**: Parents have a delimited amount of resources to give at each reproductive event\
+**Pred**: Longer cohabitation time doesn't reduce future reproduction of survival
+</p>
+
+<p class="fragment fade-right">
+**Hyp**: Parents are flexible related to the amount of resources to give to their offspring base on intrinsic and extrinsic factors\
+**Pred**: Cohabitation time reduces future reproduction or survival in older individuals or in couple with high pair fidelity 
+</p>
+
+<p class="fragment fade-right">
+**Hyp**: Sibling rivalry is always costly for the parents\
+**Pred**: Cohabitation time has a negative effect on future parents reproduction and survival  
+</p>
+<br/>
+
+## Offsprings analysis 
+
+### Dependent variables 
+<p style="text-align:left" class="fragment fade-right">
+**Short term**:
+<div style="text-align:left" class="fragment fade-right">
+* body condition\
+</div>
+
+<p style="text-align:left" class="fragment fade-right">
+**Long term:**
+</p>
+<div style="text-align:left" class="fragment fade-right">
+* average laying date
+* number of fledglings 
+* number of recruits
+</div>
+<br/>
+
+### Independent variables 
+<div style="text-align:left" class="fragment fade-right">
+* cohabitation time 
+* hatching date
+* hatching asynchrony
+* environmental condition (SST, Chl, Rain)
+* Parents' age
+</div>
+<br/>
+
+### Random variables
+<div style="text-align:left" class="fragment fade-right">
+* Cohort year
+* mother ID
+</div>
+
+## Parents analysis 
+
+### Dependent variables 
+<div style="text-align:left" class="fragment fade-right">
+**Next year:**
+
+* reproduction (1/0)
+* laying date
+* clutch size 
+* number of fledglings 
+* number of recruits
+* parent survival
+</div>
+<br/>
+
+### Independent variables 
+<div style="text-align:left" class="fragment fade-right">
+* cohabitation time
+* laying date
+* mother age  
+* father age  
+* couple experience
+* environmental condition (SST, Chl, Rain)
+</div>
+<br/>
+
+### Random variables
+<div style="text-align:left" class="fragment fade-right">
+* parent ID
+* reproduction year
+</div>
+
+
+## Results 
+
+### Offsprings
+<br/>
+<div style="color:#c40062;" class="fragment fade-right">
+**Hyp**: Core chick defends their optimal condition and reduce the brood when their fitness is in danger\
+**Pred**: Cohabitation time doesn't have any effect on core chick fitness in the short or long term  
+</div>
+<br/><br/>
+
+### Parents
+<br/>
+<div style="color:#c40062;" class="fragment fade-right">
+**Hyp**: Parents have a delimited amount of resources to give at each reproductive event\
+**Pred**: Longer cohabitation time doesn't reduce future reproduction of survival
+</div>
+
+# References
+<div id="refs"></div> 
